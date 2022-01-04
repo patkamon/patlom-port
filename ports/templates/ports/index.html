@@ -18,13 +18,41 @@
       <h1>Software Engineer</h1>
     </div>
 
+    <div class="about-me">
+      <h1>About me</h1>
+      <h3>I'm Pat, a software engineer in Bangkok who is interested in computer technology, sci-fi movies and music.  </h3>
+    </div>
+
+    <div class="projects">
+      <h1>Proudly Present Project</h1>
+
+      <div class="container">
+    <a class="cell-1" href="#">
+    </a>
+    <div class="cell-2"></div>
+    <div class="cell-3"></div>
+
+
+
+
+    </div>
+
+
+
 
   </body>
 
   <style media="screen">
 
 
+  @media (orientation: landscape) {
+body {
+  grid-auto-flow: column;
+}
 
+  body {
+    box-sizing: border-box;
+  }
     .nav {
       padding: 30px 30px 30px 30px;
 
@@ -47,6 +75,75 @@
       color: white;
       font-family: 'Source Sans Pro', sans-serif;
     }
+
+    .about-me h1{
+      padding-top: 10%;
+      color: black;
+      font-family: 'Source Sans Pro', sans-serif;
+      text-align: center;
+      font-size: 300%;
+    }
+
+    .about-me h3{
+      padding-left: 30%;
+      padding-right: 30%;
+      padding-top: 10%;
+      padding-bottom: 10%;
+      color: black;
+      font-family: 'Source Sans Pro', sans-serif;
+      text-align: center;
+      font-size: 300%;
+    }
+
+
+
+
+    .projects h1{
+      color: gray;
+      font-family: 'Source Sans Pro', sans-serif;
+      text-align: center;
+      margin-bottom: 8%;
+    }
+
+    .projects {
+      padding: 15%;
+      background-color:rgba(0, 224, 85, .4);
+    }
+
+    .projects .container {
+    margin-top: 15%;
+    height: 35vh;
+    margin: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 0fr 0fr;
+    column-gap: 3rem;
+  }
+  .cell {
+
+  color: white;
+  font-size: 1rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+
+.cell-1 {
+  border: 5px solid white;
+  border-radius: 50%;
+  background: blue;
+}
+
+.cell-2 {
+  border: 5px solid white;
+  border-radius: 50%;
+  background: orangered;
+}
+.cell-3 {
+  border: 5px solid white;
+  border-radius: 50%;
+  background: royalblue;
+}
 
   </style>
 
