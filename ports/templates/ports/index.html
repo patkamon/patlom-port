@@ -6,31 +6,49 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
     <meta charset="utf-8">
+    <script src="https://kit.fontawesome.com/7d242d31a7.js" crossorigin="anonymous"></script>
     <title>Patlom</title>
   </head>
   <body>
 
     <div class="nav">
-        <a class="icon" href="">Patlom</a>
+        <a class="icon" href=""  style="text-decoration: none">Patlom</a>
+
+        <a class="icon-am" href="#about-me">About me</a>
+
+        <a class="icon-pj" href="#projects">Projects</a>
     </div>
 
-    <div class="thumbnail">
+    <div class="thumbnail" id='thumbnail'>
       <h1>Software Engineer</h1>
     </div>
 
-    <div class="about-me">
+    <div class="about-me" id='about-me'>
       <h1>About me</h1>
       <h3>I'm Pat, a software engineer in Bangkok who is interested in computer technology, sci-fi movies and music.  </h3>
+
+      <a href="https://github.com/patkamon" target="_blank">
+        <i id="github"class="fab fa-github fa-4x"> </i>
+      </a>
+      <a href="https://www.facebook.com/patlom.awai/" target="_blank">
+        <i id="face" class="fa fa-facebook-square fa-4x" aria-hidden="true"></i>
+      </a>
+
     </div>
 
-    <div class="projects">
-      <h1>Proudly Present Project</h1>
+    <div class="projects" id='projects'>
+      <h1>Proudly Present Projects</h1>
 
       <div class="container">
     <a class="cell-1" href="#">
+      <img src="https://scontent.fbkk12-1.fna.fbcdn.net/v/t1.15752-9/269709458_617959176179650_4121497235860969084_n.png?_nc_cat=101&ccb=1-5&_nc_sid=ae9488&_nc_eui2=AeHvQ-F5p3Zkv7N3lzBuDSmma93ZUkjAEhhr3dlSSMASGJW-hDkzLVtBxyYPhUyJKPqZk3tfSVRfBbc32HwjJVtL&_nc_ohc=GaKdhr9OlLgAX9XenQY&_nc_ht=scontent.fbkk12-1.fna&oh=03_AVK3bpwr-O7st2_ByaOlqVkTnmdP85PiviDhS-lTfN0lIw&oe=61F8FCDC" alt="">
     </a>
-    <div class="cell-2"></div>
-    <div class="cell-3"></div>
+    <a class="cell-2" href="#">
+      <img src="https://scontent.fbkk9-3.fna.fbcdn.net/v/t1.15752-9/269924015_3120374401565422_4002358651944127638_n.png?_nc_cat=106&ccb=1-5&_nc_sid=ae9488&_nc_eui2=AeFWWPFPUhBLDC-OreO5ct34bjPmw6cfiONuM-bDpx-I45qoFVoQ0Aw2QvQVYcI_xb6dtyH_ptgLe60PzaCw2Yku&_nc_ohc=Fz52rpQ_YocAX9UWUm_&_nc_ht=scontent.fbkk9-3.fna&oh=03_AVKqWN7FB89MIQavffmVfiKQtNwV334FUS5mVE2sWdTBAA&oe=61F8E606" alt="">
+    </a>
+    <a class="cell-3" href="#">
+      <img src="https://scontent.fbkk9-3.fna.fbcdn.net/v/t1.15752-9/269924015_3120374401565422_4002358651944127638_n.png?_nc_cat=106&ccb=1-5&_nc_sid=ae9488&_nc_eui2=AeFWWPFPUhBLDC-OreO5ct34bjPmw6cfiONuM-bDpx-I45qoFVoQ0Aw2QvQVYcI_xb6dtyH_ptgLe60PzaCw2Yku&_nc_ohc=Fz52rpQ_YocAX9UWUm_&_nc_ht=scontent.fbkk9-3.fna&oh=03_AVKqWN7FB89MIQavffmVfiKQtNwV334FUS5mVE2sWdTBAA&oe=61F8E606" alt="">
+    </a>
 
 
 
@@ -58,9 +76,26 @@ body {
 
         background-color: white;
     }
+
      .icon{
       font-size: 200%;
       margin-left: 10%;
+    }
+    a:hover {
+      color: #00e055;
+    }
+
+    a {
+      text-decoration: none;
+      color:#000;
+    }
+    .icon-am {
+      font-size: 200%;
+      margin-left: 60%;
+    }
+    .icon-pj {
+      font-size: 200%;
+      margin-left: 3%;
     }
 
     .thumbnail {
@@ -95,6 +130,31 @@ body {
       font-size: 300%;
     }
 
+    #github {
+      position:fixed;
+      width:100px;
+      height:100px;
+      right:0%;
+      bottom:0%;
+      color: #171515;
+    }
+
+    .about-me #github:hover {
+      color: #967bb6;
+    }
+
+    #face {
+      position:fixed;
+      width:100px;
+      height:100px;
+      right:0%;
+      bottom:10%;
+      color: #171515;
+    }
+
+    .about-me #face:hover {
+      color: blue;
+    }
 
 
 
@@ -103,6 +163,11 @@ body {
       font-family: 'Source Sans Pro', sans-serif;
       text-align: center;
       margin-bottom: 8%;
+      font-size: 2.5rem;
+    }
+
+    .projects h1:hover{
+      color: white;
     }
 
     .projects {
@@ -120,7 +185,6 @@ body {
     column-gap: 3rem;
   }
   .cell {
-
   color: white;
   font-size: 1rem;
   text-align: center;
@@ -130,20 +194,45 @@ body {
 
 .cell-1 {
   border: 5px solid white;
-  border-radius: 50%;
-  background: blue;
+  background: white;
+}
+.cell-1 img {
+  height: 100%;
+  width:100%;
+  filter: grayscale();
+}
+
+.cell-1 img:hover {
+  filter: none;
 }
 
 .cell-2 {
   border: 5px solid white;
-  border-radius: 50%;
-  background: orangered;
 }
+
+.cell-2 img {
+  height: 100%;
+  width:100%;
+  filter: grayscale();
+}
+
+.cell-2 img:hover {
+  filter: none;
+}
+
 .cell-3 {
   border: 5px solid white;
-  border-radius: 50%;
-  background: royalblue;
 }
+.cell-3 img {
+  height: 100%;
+  width:100%;
+  filter: grayscale();
+}
+
+.cell-3 img:hover {
+  filter: none;
+}
+
 
   </style>
 
