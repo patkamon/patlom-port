@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
     <meta charset="utf-8">
     <script src="https://kit.fontawesome.com/7d242d31a7.js" crossorigin="anonymous"></script>
     <title></title>
@@ -23,6 +26,48 @@
         <a href="https://www.facebook.com/patlom.awai/" target="_blank">
           <i id="face" class="fa fa-facebook-square fa-4x" aria-hidden="true"></i>
         </a>
+    </div>
+
+
+    <div class="thumbnail">
+      <h1 >SKDUE</h1>
+      <h3>A web application that makes your life easier by helping you manage your schedule. </h3>
+
+
+      <a id='take-a-look' href="https://github.com/patkamon/skdue" target="_blank">
+        <h3 id='take-text'>-take a look-</h3>
+      </a>
+
+      <i id="team" class="fas fa-users fa-4x"></i>
+      <span id='team-text'>team project</span>
+
+
+    </div>
+
+
+    <div class='detail'>
+
+
+      <h2>Technologies related to this project.</h2>
+
+      <div class="grid-container">
+          <div class="empty"></div>
+  <div class="grid-item">
+    <img title="Python" class='python' src="https://scontent.fbkk12-1.fna.fbcdn.net/v/t1.15752-9/271045429_961276661191292_4594882212204513995_n.png?_nc_cat=107&ccb=1-5&_nc_sid=ae9488&_nc_eui2=AeG4-CpgibLqjmpKTj17UALduDBvpCba2xm4MG-kJtrbGR_xj0TTrSKLmTuuESOvBCEgh1JoSB7RT59O6HmHyU_9&_nc_ohc=tvut351ZPJsAX_4F6rj&_nc_ht=scontent.fbkk12-1.fna&oh=03_AVIaYVci3HfMDRN7tJ-ymuQ0bktJHrbrYrH43G9IF96a7g&oe=61FA474A" alt="python">
+  </div>
+  <div class="grid-item">
+  <img title="Django REST framwork" class='django' src="https://scontent.fbkk12-1.fna.fbcdn.net/v/t1.15752-9/270603548_977694756186026_6898718463798211295_n.png?_nc_cat=101&ccb=1-5&_nc_sid=ae9488&_nc_eui2=AeHtngYrpYi4WzZCO6Vlj97OlTKHtt1AbGOVMoe23UBsYyGwU9KD8aM0EHZtN7agy48RnOuVHb7Ju1VkCXYAzejM&_nc_ohc=upx5cRNhcvIAX_NEocS&_nc_ht=scontent.fbkk12-1.fna&oh=03_AVKPJJxWJJHwkYHwIQ-8HyqxeO_zeIQITCWABbcIWX5SWA&oe=61FD842D" alt="django-rest-framwork">
+</div>
+  <div class="grid-item">
+    <img title="JavaScript" class='js' src="https://scontent.fbkk9-2.fna.fbcdn.net/v/t1.15752-9/269605791_628820578174157_7223448072452657771_n.png?_nc_cat=109&ccb=1-5&_nc_sid=ae9488&_nc_eui2=AeHyRLAs9eBm6fcCsjE7bK_J-8mYxhxR2a77yZjGHFHZrr2OGABGJm6zXxdYNiBzlFOUhcV0dlJhOzoyNl19HfQW&_nc_ohc=C-O5fXLkRAoAX_GmOri&_nc_ht=scontent.fbkk9-2.fna&oh=03_AVLw0NuhZmJZU47AIHJ3eG0s_1KDbgPpoDJnLt7GyTsRlA&oe=61FBEAB1" alt="java_script">
+  </div>
+  <div class="grid-item">
+          <img title="Vue.js"class='vue' src="https://scontent.fbkk13-2.fna.fbcdn.net/v/t1.15752-9/270191871_236684531944572_507944190375506733_n.png?_nc_cat=111&ccb=1-5&_nc_sid=ae9488&_nc_eui2=AeFZHBXW2Py6NlArUi83jRovZwHELZqaMsVnAcQtmpoyxUOyos-IlqDRT6NkzQeHPSAb3lK6EU-fNy0JOY5hHXBU&_nc_ohc=gOGdknmWlwMAX-0Tgdq&_nc_ht=scontent.fbkk13-2.fna&oh=03_AVImKvzbVR3OfgPk0XT6eBMIKETo8-HAu9muKFmc3YB3rQ&oe=61FC5423" alt="vue.js">
+  </div>
+  <div class="empty"></div>
+  </div>
+
+
     </div>
 
 
@@ -97,6 +142,153 @@ body {
      color: blue;
    }
 
+
+   .thumbnail {
+     margin: auto;
+     padding: 15%;
+     background-color: #14db67;
+   }
+
+   .thumbnail h1 {
+     text-align: center;
+     font-size: 400%;
+     font-family: 'Source Sans Pro', sans-serif;
+     color: white;
+   }
+
+   .thumbnail h3 {
+     text-align: center;
+     font-size: 180%;
+     font-family: 'Source Sans Pro', sans-serif;
+     color: white;
+   }
+
+   #take-a-look{
+     font-size: 180%;
+     font-family: 'Source Sans Pro', sans-serif;
+
+
+
+   }
+
+   #take-text {
+
+      color: green;
+      padding: 0.5% 0.1%;
+      background-color: white;
+      width:30%;
+      margin: auto;
+   }
+
+
+
+   #take-text:hover {
+     color: black;
+     background-color: yellow;
+   }
+
+
+
+    #team-text {
+      visibility: hidden;
+      color: black;
+      width: 6%;
+      height: 3%;
+      background-color: white;
+      text-align: center;
+      border-radius: 6px;
+      padding: 1px 1px 1px 1px;
+      font-size: 100%;
+      position: absolute;
+      top: 76%;
+      right: 85%;
+
+    }
+
+    #team:hover ~#team-text{
+      visibility: visible;
+    }
+
+
+    .detail {
+        padding-bottom: 15%;
+    }
+
+
+    .thumbnail i{
+      color: white;
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      transform: translate(-230%, 180%);
+ }
+
+
+ .detail h2{
+   margin-top: 9%;
+   text-align: center;
+   font-size: 300%;
+   font-family: 'Source Sans Pro', sans-serif;
+ }
+
+ .grid-container {
+   display: grid;
+   grid-template-columns: 20% 15% 15% 15% 15% 20%;
+   background-color: white;
+   padding: 30px;
+ }
+ .grid-item {
+   background-color: rgba(255, 255, 255, 0.8);
+   padding: 1%;
+   text-align: center;
+ }
+
+ .detail img{
+   width: 100%;
+   height:100%
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+
+ }
+
+ .vue {
+   display: inline-block;
+   margin-left: auto;
+   margin-right: auto;
+  filter: grayscale();
+}
+
+.python {
+  display: inline-block;
+  margin-right: auto;
+  filter: grayscale();
+}
+.django {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  filter: grayscale();
+}
+.js {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  filter: grayscale();
+}
+
+.js:hover {
+  filter:none;
+}
+.django:hover {
+  filter:none;
+}
+.vue:hover {
+  filter:none;
+}
+.python:hover {
+  filter:none;
+}
 
 
 </style>
